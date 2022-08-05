@@ -1,47 +1,47 @@
 <!DOCTYPE html>  
 <html>  
 <head>  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
 <script>  
 $(document).ready(function(){  
     $("#hide").click(function(){  
-        $("p").hide();  
-    });  
+        $("p").hide();
+    });
+    $("#show").click(function(){  
+        $("p").show();
+    });
+    $("p").css("background-color" , "black").css("color" , "yellow");
+    $("h2").css("background-color" , "blue").css("color" , "green").css("textAlign", "center");
 });
-$(document).ready(function() {  
- $("p").css("background-color", "orange");  
- });  
-</script>  
-</head>  
-
-<p>  
-<h1>This is the discription about my idol Lionel Messi: </h1><br/>  
-<h3>He won 7 Balo'n Doors in his life.<br/>  
+</script>
+</head> 
+<body> 
+ 
+<h2>This is the discription about my idol Lionel Messi: </h2><br/>  
+<p>
+He won 7 Balon d'Ors in his life.<br/>  
 He is the G.O.A.T.in football.<br/>  
 He is just magic on the pitch whenever he plays.<br/>  
 He had made many records which might be broken ever.<br/>  
-I just love Lionel Messi die heartedly.</h3><br/>  
- 
+I just love Lionel Messi die heartedly. <br/>  
 </p>  
 <button id="hide">Hide</button>
+<button id="show">Show</button>
 <style>
-body{
+    body{
+    
+        background-image: url(https://w0.peakpx.com/wallpaper/79/110/HD-wallpaper-lionel-messi-fc-barcelona-argentine-footballer-la-liga-spain-catalonia-football-burgundy-stone-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    p{
+        font-size: large;
+    }
+    p{
+    
+        color: blue;
+    }
 
-    background-image: url(https://w0.peakpx.com/wallpaper/79/110/HD-wallpaper-lionel-messi-fc-barcelona-argentine-footballer-la-liga-spain-catalonia-football-burgundy-stone-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-p{
-    font-size: medium;
-}
-h1{
-
-    color: blue;
-}
-h3{
-
-    color: aquamarine;
-}
-</style>
+    </style>
 </body>  
 </html>
