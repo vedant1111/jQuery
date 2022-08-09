@@ -45,11 +45,11 @@
 					if(MDH<=500)
 					{
 						MDH+=10;
-						$("#MyDiv").css("height",small);
-						$("#MyDiv").css("width",small);
+						$("#MyDiv").css("height",MDH);
+						$("#MyDiv").css("width",MDH);
 					}
 					else{
-						alert("More than 500px is not possible.");
+						alert("More than 2000px is not possible.");
 					}
 				});
 				
@@ -62,7 +62,7 @@
 						$("#MyDiv").css("width",MDH);
 					}
 					else{
-						alert("Less than 20px is not possible.");
+						alert("Less than 100px is not possible.");
 					}
 				});
 			});
@@ -70,7 +70,7 @@
 		
 	</head>
     <body style="background-color: red;">
-        <img src="C:\Users\student\Downloads\pic1.jpg" style="height: 150px; width: 150px;" alt=""><hr />
+        <img src="C:\Users\student\Downloads\pic1.jpg" id="MyDiv" style="height: 150px; width: 150px;" alt=""><hr />
 		<button id="BtnHide">Hide</button>&nbsp;&nbsp;<button id="BtnShow">Show</button><hr />
         <button id="BtnToggle">Hide</button><hr />
         <button id="BtnPlus" style="font-size:xx-large;"><b>+</b></button>&nbsp;&nbsp;<button id="BtnMinus" style="font-size:xx-large;"><b>-</b></button><hr />
